@@ -1,0 +1,20 @@
+Data_Path:
+  train_csv_path: "./data/train.csv"
+  test_csv_path: "./data/test.csv"
+
+Preprocess_config:
+  max_length : 30 # will delete data that have moret than 30 words
+  frac: 0.01 # only 1% of the original data will be used for training
+  preprocess_train_path: "./data/preprocess_train.csv"
+  preprocess_test_path: "./data/preprocess_test.csv"
+  
+Label_map:
+  agreed: 0
+  disagreed: 1
+  unrelated: 2
+
+Training_config:
+  batch_size : 64
+  epochs: 10
+  learning_rate: 0.00001
+  saving_path: "./output_models"
