@@ -35,7 +35,7 @@ def preprocess_dataframe(df, mode, configs):
         df_test = df_test.fillna("")
         return df_test
     
-def read_configs(path="./config.yaml"):
+def read_configs(path="./cfg.yaml"):
     with open(path, 'r') as file:
         try:
             configs = yaml.load(file, Loader=yaml.FullLoader)
