@@ -2,7 +2,7 @@ from transformers import BertForSequenceClassification
 import torch
 
 def get_model():
-    model = BertForSequenceClassification.from_pretrained("bert-base-chinese", num_labels=3)
+    model = BertForSequenceClassification.from_pretrained("bert-base-english", num_labels=3)
     return model
 
 def get_prediction(model, dataloader, compute_acc=False):
