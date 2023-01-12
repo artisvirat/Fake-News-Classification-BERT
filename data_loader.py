@@ -31,7 +31,7 @@ class FakeNewDataset(Dataset):
         self.df = df 
         self.len = len(df)
         self.label_map = label_map
-        self.tokenizer = BertTokenizer.from_pretrained("bert-base-chinese")
+        self.tokenizer = BertTokenizer.from_pretrained("bert-base-english")
 
     def __getitem__(self, idx):
         if self.mode =="test":
